@@ -1,4 +1,4 @@
-import requests, urllib, json, colorama
+import requests, urllib, json
 from bs4 import BeautifulSoup
 
 
