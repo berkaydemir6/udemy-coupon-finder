@@ -1,0 +1,14 @@
+{% include 'header.html' %}
+
+<div class="container mt-5">
+    {% for course in data %}
+        <a href="{{course[1]}}"><h3>{{course[0]}}</h3></a>
+        <ul>
+            <li>Kupon Kodu: {{course[2]}}</li>
+            <li>Kalan Kupon Sayısı: {{course[3]}}</li>
+            <li>Kalan Süre: {{course[4]}}</li>
+        </ul>
+    {% endfor %}
+</div>
+
+{% include 'footer.html' %}
